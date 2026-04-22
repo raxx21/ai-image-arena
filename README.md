@@ -1,12 +1,12 @@
 # AI Image Arena
 
-A blind head-to-head battle between AI image generation models. Two models compete by generating images from the same prompts — you don't know which model made which image until the final reveal. Claude Sonnet 4 judges each round and declares a winner.
+A blind head-to-head battle between AI image generation models. Two models compete by generating images from the same prompts — you don't know which model made which image until the final reveal. Claude Opus 4 judges each round and declares a winner.
 
 ## How It Works
 
 1. **Prompts** — Claude Sonnet 4 generates 5 creative prompts across different categories (photorealism, artistic style, fantasy, abstract, portraits)
 2. **Generate** — Both models generate images in parallel from the same prompts
-3. **Judge** — Claude Sonnet 4 scores each pair on Creativity, Quality, and Prompt Adherence (1–10)
+3. **Judge** — Claude Opus 4 scores each pair on Creativity, Quality, and Prompt Adherence (1–10)
 4. **Reveal** — After all rounds, the final scoreboard shows the winner and reveals which model was A vs B
 
 The model assignment is randomized each battle so there's no bias in the judging.
@@ -18,7 +18,7 @@ The model assignment is randomized each battle so there's no bias in the judging
 | Image Generator A | GPT-5.4 Image (`openai/gpt-5.4-image-2`) |
 | Image Generator B | Gemini 3.1 Flash Image (`google/gemini-3.1-flash-image-preview`) |
 | Prompt Generator | Claude Sonnet 4 (`anthropic/claude-sonnet-4`) |
-| Judge | Claude Sonnet 4 (`anthropic/claude-sonnet-4`) |
+| Judge | Claude Opus 4 (`anthropic/claude-opus-4`) |
 
 All models are accessed through [OpenRouter](https://openrouter.ai) — one API key, no separate provider accounts needed.
 
